@@ -1,0 +1,11 @@
+
+word = "aaa"
+
+for i in range(3, -1, -1):
+    guess = input(f"{i} attempts left,\n\tEnter a guess: ").strip().lower()
+
+    if guess == word:
+        print("You win")
+        break
+else:  # yes, a for-else clause.
+   print("You lose")
